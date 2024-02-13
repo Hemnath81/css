@@ -1,0 +1,53 @@
+/* <!-- position
+    
+        1.static
+          *HTML elements are static by default
+          *Elements are not affected by top,bottom,right,left properties
+          *It always positioned according to the normal flow of the page
+        
+        2.Relative
+          *It affect the elements by right,left,top,bottom properties
+          *It always positioned according to the normal flow of page
+          
+        3.Absolute
+          *Its final position is determined by the values of right,left,top,bottom
+          *The element is removed from the normal document flow
+          
+        4.Fixed
+          *The element is removed from the normal document flow
+          *The elements are fixed to the display
+          *It would override in other element
+          
+        5.Sticky
+          *Element is positioned according to the normal flow of the document
+          *A sticky element behaves like a relative element until the viewport meets a specified position,
+               then it becomes fixed in a spot and appears to "stick"to the page as the user scrolls.--> */
+    
+.one{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 255, 21);
+    border: 2px solid black;
+    position: fixed;
+    
+    
+}
+.two{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border: 2px solid black;
+    position: absolute;
+    left: 500px;
+    top: 50px;
+    /* it will consider the overall display,not where it's placed */
+}
+.three{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 119, 0);
+    border: 2px solid black;
+  
+
+
+}
